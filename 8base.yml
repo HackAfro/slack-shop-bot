@@ -1,0 +1,11 @@
+functions:
+  notifySlack:
+    handler:
+      code: src/notifySlack.ts
+    type: trigger.after
+    operation: Order.create
+  # notifyFriends:
+  #   handler:
+  #     code: src/sendMail.ts
+  #   type: trigger.after
+  #   operation: Avengers.create
